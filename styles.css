@@ -1,0 +1,25 @@
+/* TuneVerse - Day 1 Setup */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #141414;
+    color: #ffffff;
+    font-family: system-ui, sans-serif;
+}
+
+.app-shell {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.setup-heading {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.setup-subtitle {
+    font-size: 16px;
+    color: #bbbbbb;
+}
