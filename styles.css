@@ -1,4 +1,4 @@
-/* TuneVerse - Day 1 Setup */
+/* Base layout */
 
 body {
     margin: 0;
@@ -8,18 +8,80 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-.app-shell {
-    text-align: center;
-    margin-top: 80px;
+/* App container */
+.app-container {
+    display: flex;
+    height: 100vh;
 }
 
-.setup-heading {
-    font-size: 42px;
-    margin-bottom: 10px;
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-text {
+    font-size: 22px;
     font-weight: 700;
 }
 
-.setup-subtitle {
-    font-size: 16px;
-    color: #bbbbbb;
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-btn {
+    padding: 10px;
+    background: #252525;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #1f1f1f;
+}
+
+.circle-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #2d2d2d;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.user-box {
+    background: #2d2d2d;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.user-name {
+    font-size: 14px;
+}
+
+/* Content Area */
+.content-area {
+    padding: 25px;
 }
