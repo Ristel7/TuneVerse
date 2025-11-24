@@ -1,2 +1,1 @@
-// Script setup for TuneVerse
-console.log("TuneVerse basic layout loaded");
+console.log("TuneVerse layout structure updated");
