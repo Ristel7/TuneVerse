@@ -1,4 +1,4 @@
-/* Base layout */
+/* Base Layout */
 
 body {
     margin: 0;
@@ -8,44 +8,56 @@ body {
     font-family: system-ui, sans-serif;
 }
 
-/* App container */
 .app-container {
     display: flex;
     height: 100vh;
 }
 
 /* Sidebar */
+
 .sidebar {
     width: 250px;
-    padding: 20px;
+    padding: 25px 20px;
     background: #1b1b1b;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
 .logo-text {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .nav-links {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
 }
 
 .nav-btn {
-    padding: 10px;
+    padding: 12px;
     background: #252525;
     color: #ffffff;
     border: none;
     border-radius: 6px;
     text-align: left;
     cursor: pointer;
+    font-size: 15px;
+    transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+    background: #303030;
+}
+
+.nav-btn.active {
+    background: #303030;
+    font-weight: 600;
 }
 
 /* Main Content */
+
 .main-content {
     flex: 1;
     display: flex;
@@ -53,12 +65,13 @@ body {
 }
 
 /* Header */
+
 .top-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    background: #1f1f1f;
+    background: #222222;
 }
 
 .circle-btn {
@@ -69,19 +82,50 @@ body {
     color: #ffffff;
     border: none;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+
+.circle-btn:hover {
+    background: #3a3a3a;
 }
 
 .user-box {
     background: #2d2d2d;
     padding: 8px 15px;
-    border-radius: 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .user-name {
     font-size: 14px;
 }
 
-/* Content Area */
+/* Content Section */
+
 .content-area {
     padding: 25px;
+}
+
+.placeholder-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.placeholder-card {
+    background: #242424;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #cccccc;
+    transition: 0.2s ease;
+}
+
+.placeholder-card:hover {
+    background: #303030;
+    transform: translateY(-3px);
 }
