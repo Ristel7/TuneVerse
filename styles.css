@@ -102,30 +102,55 @@ body {
     font-size: 14px;
 }
 
-/* Content Section */
+/* Main Content */
 
 .content-area {
     padding: 25px;
 }
 
-.placeholder-grid {
-    margin-top: 20px;
+.section-title {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Song Cards Grid */
+
+.cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 22px;
 }
 
-.placeholder-card {
-    background: #242424;
-    padding: 25px 15px;
-    text-align: center;
+.song-card {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.song-card:hover {
+    background: #292929;
+    transform: translateY(-5px);
+}
+
+.cover {
+    width: 100%;
+    height: 170px;
+    background: #333;
     border-radius: 8px;
-    font-size: 15px;
-    color: #cccccc;
-    transition: 0.2s ease;
+    margin-bottom: 12px;
 }
 
-.placeholder-card:hover {
-    background: #303030;
-    transform: translateY(-3px);
+.song-title {
+    margin: 5px 0 3px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.song-artist {
+    margin: 0;
+    font-size: 14px;
+    color: #bbbbbb;
 }
