@@ -1,1 +1,1 @@
-console.log("TuneVerse layout structure updated");
+console.log("Song cards structure added");
