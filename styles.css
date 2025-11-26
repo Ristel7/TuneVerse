@@ -142,6 +142,14 @@ body {
     border-radius: 8px;
     margin-bottom: 12px;
 }
+.cover {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background-size: cover;
+    background-position: center;
+}
 
 .song-title {
     margin: 5px 0 3px 0;
