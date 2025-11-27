@@ -162,3 +162,99 @@ body {
     font-size: 14px;
     color: #bbbbbb;
 }
+
+/* Player Bar */
+
+.player-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    background: #181818;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-top: 1px solid #333;
+}
+
+/* Left section */
+
+.player-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 25%;
+}
+
+.player-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.player-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.player-artist {
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
+/* Center controls */
+
+.player-center {
+    text-align: center;
+    width: 50%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.control-btn, .play-btn {
+    background: #2a2a2a;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.control-btn:hover,
+.play-btn:hover {
+    background: #3a3a3a;
+}
+
+/* Seek bar */
+
+.seek-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+#seekBar {
+    width: 55%;
+}
+
+/* Right volume */
+
+.player-right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#volumeBar {
+    width: 120px;
+}
