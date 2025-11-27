@@ -1,61 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <div class="player-left">
+            <img id="player-cover" class="player-cover" src="" alt="">
+            <div>
+                <div id="player-title" class="player-title">Select a song</div>
+                <div id="player-artist" class="player-artist"></div>
+            </div>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuneVerse</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-    <div class="app-container">
-
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo-area">
-                <span class="logo-text">TuneVerse</span>
+        <div class="player-center">
+            <div class="controls">
+                <button id="prevBtn" class="control-btn">⏮</button>
+                <button id="playPauseBtn" class="play-btn">⏯</button>
+                <button id="nextBtn" class="control-btn">⏭</button>
             </div>
 
-            <nav class="nav-links">
-                <button class="nav-btn active">Home</button>
-                <button class="nav-btn">Search</button>
-                <button class="nav-btn">Your Library</button>
-            </nav>
-        </aside>
+            <div class="seek-area">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="seekBar" value="0" min="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
 
-        <!-- Main Content -->
-        <main class="main-content">
-
-            <!-- Header -->
-            <header class="top-header">
-                <div class="header-left">
-                    <button class="circle-btn">&#9664;</button>
-                    <button class="circle-btn">&#9654;</button>
-                </div>
-
-                <div class="header-right">
-                    <div class="user-box">
-                        <span class="user-name">Priyanshu Project</span>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Content -->
-            <section class="content-area">
-                <h2 class="section-title">Top 10 Songs of All Time</h2>
-
-                <!-- JS will inject songs here -->
-                <div class="cards-grid" id="topSongsGrid"></div>
-
-            </section>
-
-        </main>
-
+        <div class="player-right">
+            <input type="range" id="volumeBar" min="0" max="1" step="0.01">
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
+    
