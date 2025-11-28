@@ -1,4 +1,63 @@
-    <!-- Player Bar -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneVerse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <span class="logo-text">TuneVerse</span>
+            </div>
+
+            <nav class="nav-links">
+                <button class="nav-btn active" id="navHome">Home</button>
+                <button class="nav-btn" id="navBollywood">Bollywood</button>
+                <button class="nav-btn">Your Library</button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="circle-btn">&#9664;</button>
+                    <button class="circle-btn">&#9654;</button>
+                </div>
+
+                <div class="header-right">
+                    <div class="user-box">
+                        <span class="user-name">Priyanshu Project</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- HOME PAGE -->
+            <section class="content-area" id="homePage">
+                <h2 class="section-title">Top 10 Songs of All Time</h2>
+                <div class="cards-grid" id="topSongsGrid"></div>
+            </section>
+
+            <!-- BOLLYWOOD PAGE -->
+            <section class="content-area hidden" id="bollywoodPage">
+                <h2 class="section-title">Bollywood Love Songs</h2>
+                <div class="cards-grid" id="bollywoodGrid"></div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- PLAYER BAR -->
     <div class="player-bar">
         <div class="player-left">
             <img id="player-cover" class="player-cover" src="" alt="">
@@ -29,5 +88,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
-    
