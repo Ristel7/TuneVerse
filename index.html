@@ -24,6 +24,9 @@
                 <button class="nav-btn">Your Library</button>
             </nav>
         </aside>
+        <button class="nav-btn active" id="navHome">Home</button>
+        <button class="nav-btn" id="navBollywood">Bollywood</button>
+        <button class="nav-btn" id="navSearch">Search</button>
 
         <!-- Main Content -->
         <main class="main-content">
@@ -34,13 +37,18 @@
                     <button class="circle-btn">&#9664;</button>
                     <button class="circle-btn">&#9654;</button>
                 </div>
-
+            
+                <div class="header-center">
+                    <input type="text" id="searchInput" class="search-box" placeholder="Search for songs...">
+                </div>
+            
                 <div class="header-right">
                     <div class="user-box">
                         <span class="user-name">Priyanshu Project</span>
                     </div>
                 </div>
             </header>
+
 
             <!-- HOME PAGE -->
             <section class="content-area" id="homePage">
@@ -53,6 +61,12 @@
                 <h2 class="section-title">Bollywood Love Songs</h2>
                 <div class="cards-grid" id="bollywoodGrid"></div>
             </section>
+            <!-- SEARCH PAGE -->
+            <section class="content-area hidden" id="searchPage">
+                <h2 class="section-title">Search Results</h2>
+                <div class="cards-grid" id="searchGrid"></div>
+            </section>
+
 
         </main>
     </div>
