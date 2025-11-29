@@ -102,6 +102,28 @@ body {
     font-size: 14px;
 }
 
+.header-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    width: 60%;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: #2b2b2b;
+    color: white;
+    transition: 0.25s ease;
+}
+
+.search-box:focus {
+    background: #3a3a3a;
+}
+
 /* Main Content */
 
 .content-area {
