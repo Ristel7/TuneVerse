@@ -1,3 +1,307 @@
 {
-    "tracks": []
-}
+  "tracks": [
+    {
+      "id": 1,
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "album": "Bohemian Rhapsody",
+      "duration": 354,
+      "audioSrc": "audio/english/bohemian_rhapsody.mp3",
+      "cover": "covers/english/bohemian_rhapsody.png",
+      "category": "english"
+    },
+    {
+      "id": 2,
+      "title": "Imagine",
+      "artist": "John Lennon",
+      "album": "Imagine",
+      "duration": 183,
+      "audioSrc": "audio/english/imagine.mp3",
+      "cover": "covers/english/imagine.png",
+      "category": "english"
+    },
+    {
+      "id": 3,
+      "title": "Stairway to Heaven",
+      "artist": "Led Zeppelin",
+      "album": "Stairway to Heaven",
+      "duration": 482,
+      "audioSrc": "audio/english/stairway_to_heaven.mp3",
+      "cover": "covers/english/stairway_to_heaven.png",
+      "category": "english"
+    },
+    {
+      "id": 4,
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "album": "Smells Like Teen Spirit",
+      "duration": 301,
+      "audioSrc": "audio/english/smells_like_teen_spirit.mp3",
+      "cover": "covers/english/smells_like_teen_spirit.png",
+      "category": "english"
+    },
+    {
+      "id": 5,
+      "title": "Billie Jean",
+      "artist": "Michael Jackson",
+      "album": "Thriller",
+      "duration": 294,
+      "audioSrc": "audio/english/billie_jean.mp3",
+      "cover": "covers/english/billie_jean.png",
+      "category": "english"
+    },
+    {
+      "id": 6,
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "album": "Hotel California",
+      "duration": 391,
+      "audioSrc": "audio/english/hotel_california.mp3",
+      "cover": "covers/english/hotel_california.png",
+      "category": "english"
+    },
+    {
+      "id": 7,
+      "title": "Hey Jude",
+      "artist": "The Beatles",
+      "album": "Hey Jude",
+      "duration": 431,
+      "audioSrc": "audio/english/hey_jude.mp3",
+      "cover": "covers/english/hey_jude.png",
+      "category": "english"
+    },
+    {
+      "id": 8,
+      "title": "Like a Rolling Stone",
+      "artist": "Bob Dylan",
+      "album": "Highway 61 Revisited",
+      "duration": 369,
+      "audioSrc": "audio/english/like_a_rolling_stone.mp3",
+      "cover": "covers/english/like_a_rolling_stone.png",
+      "category": "english"
+    },
+    {
+      "id": 9,
+      "title": "What's Going On",
+      "artist": "Marvin Gaye",
+      "album": "What's Going On",
+      "duration": 233,
+      "audioSrc": "audio/english/whats_going_on.mp3",
+      "cover": "covers/english/whats_going_on.png",
+      "category": "english"
+    },
+    {
+      "id": 10,
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "album": "21",
+      "duration": 228,
+      "audioSrc": "audio/english/rolling_in_the_deep.mp3",
+      "cover": "covers/english/rolling_in_the_deep.png",
+      "category": "english"
+    },
+
+    <!-- Bollywood Playlist Below -->
+
+    {
+      "id": 11,
+      "title": "Tum Hi Ho",
+      "artist": "Arijit Singh",
+      "album": "Aashiqui 2",
+      "duration": 261,
+      "audioSrc": "audio/bollywood/tum_hi_ho.mp3",
+      "cover": "covers/bollywood/tum_hi_ho.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 12,
+      "title": "Khairiyat",
+      "artist": "Arijit Singh",
+      "album": "Chhichhore",
+      "duration": 243,
+      "audioSrc": "audio/bollywood/khairiyat.mp3",
+      "cover": "covers/bollywood/khairiyat.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 13,
+      "title": "Janam Janam",
+      "artist": "Arijit Singh",
+      "album": "Dilwale",
+      "duration": 200,
+      "audioSrc": "audio/bollywood/janam_janam.mp3",
+      "cover": "covers/bollywood/janam_janam.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 14,
+      "title": "Raabta",
+      "artist": "Arijit Singh",
+      "album": "Agent Vinod",
+      "duration": 264,
+      "audioSrc": "audio/bollywood/raabta.mp3",
+      "cover": "covers/bollywood/raabta.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 15,
+      "title": "Tera Ban Jaunga",
+      "artist": "Akhil Sachdeva",
+      "album": "Kabir Singh",
+      "duration": 229,
+      "audioSrc": "audio/bollywood/tera_ban_jaunga.mp3",
+      "cover": "covers/bollywood/tera_ban_jaunga.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 16,
+      "title": "Agar Tum Saath Ho",
+      "artist": "Arijit Singh",
+      "album": "Tamasha",
+      "duration": 323,
+      "audioSrc": "audio/bollywood/agar_tum_saath_ho.mp3",
+      "cover": "covers/bollywood/agar_tum_saath_ho.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 17,
+      "title": "Tera Hone Laga Hoon",
+      "artist": "Atif Aslam",
+      "album": "APKGK",
+      "duration": 269,
+      "audioSrc": "audio/bollywood/tera_hone_laga_hoon.mp3",
+      "cover": "covers/bollywood/tera_hone_laga_hoon.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 18,
+      "title": "Hawayein",
+      "artist": "Arijit Singh",
+      "album": "Jab Harry Met Sejal",
+      "duration": 307,
+      "audioSrc": "audio/bollywood/hawayein.mp3",
+      "cover": "covers/bollywood/hawayein.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 19,
+      "title": "Jeene Laga Hoon",
+      "artist": "Atif Aslam",
+      "album": "Ramaiya Vastavaiya",
+      "duration": 235,
+      "audioSrc": "audio/bollywood/jeene_laga_hoon.mp3",
+      "cover": "covers/bollywood/jeene_laga_hoon.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 20,
+      "title": "Tum Se Hi",
+      "artist": "Mohit Chauhan",
+      "album": "Jab We Met",
+      "duration": 320,
+      "audioSrc": "audio/bollywood/tum_se_hi.mp3",
+      "cover": "covers/bollywood/tum_se_hi.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 21,
+      "title": "Pashmina",
+      "artist": "Amit Trivedi",
+      "album": "Fitoor",
+      "duration": 258,
+      "audioSrc": "audio/bollywood/pashmina.mp3",
+      "cover": "covers/bollywood/pashmina.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 22,
+      "title": "Muskurane",
+      "artist": "Arijit Singh",
+      "album": "Citylights",
+      "duration": 289,
+      "audioSrc": "audio/bollywood/muskurane.mp3",
+      "cover": "covers/bollywood/muskurane.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 23,
+      "title": "Kaun Tujhe",
+      "artist": "Palak Muchhal",
+      "album": "MS Dhoni",
+      "duration": 272,
+      "audioSrc": "audio/bollywood/kaun_tujhe.mp3",
+      "cover": "covers/bollywood/kaun_tujhe.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 24,
+      "title": "Sun Saathiya",
+      "artist": "Divya Kumar",
+      "album": "ABCD 2",
+      "duration": 208,
+      "audioSrc": "audio/bollywood/sun_saathiya.mp3",
+      "cover": "covers/bollywood/sun_saathiya.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 25,
+      "title": "Raanjhanaa",
+      "artist": "Jaswinder Singh",
+      "album": "Raanjhanaa",
+      "duration": 258,
+      "audioSrc": "audio/bollywood/raanjhanaa.mp3",
+      "cover": "covers/bollywood/raanjhanaa.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 26,
+      "title": "Bol Do Na Zara",
+      "artist": "Armaan Malik",
+      "album": "Azhar",
+      "duration": 284,
+      "audioSrc": "audio/bollywood/bol_do_na_zara.mp3",
+      "cover": "covers/bollywood/bol_do_na_zara.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 27,
+      "title": "Dekha Hazaro Dafaa",
+      "artist": "Arijit Singh",
+      "album": "Rustom",
+      "duration": 272,
+      "audioSrc": "audio/bollywood/dekha_hazaro_dafaa.mp3",
+      "cover": "covers/bollywood/dekha_hazaro_dafaa.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 28,
+      "title": "Dil Diyan Gallan",
+      "artist": "Atif Aslam",
+      "album": "Tiger Zinda Hai",
+      "duration": 282,
+      "audioSrc": "audio/bollywood/dil_diyan_gallan.mp3",
+      "cover": "covers/bollywood/dil_diyan_gallan.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 29,
+      "title": "Chal Wahan Jaate Hain",
+      "artist": "Arijit Singh",
+      "album": "Single",
+      "duration": 294,
+      "audioSrc": "audio/bollywood/chal_wahan_jaate_hain.mp3",
+      "cover": "covers/bollywood/chal_wahan_jaate_hain.png",
+      "category": "bollywood"
+    },
+    {
+      "id": 30,
+      "title": "Tujhe Kitna Chahne Lage",
+      "artist": "Arijit Singh",
+      "album": "Kabir Singh",
+      "duration": 273,
+      "audioSrc": "audio/bollywood/tujhe_kitna_chahne_lage.mp3",
+      "cover": "covers/bollywood/tujhe_kitna_chahne_lage.png",
+      "category": "bollywood"
+    }
+  ]
+      }
