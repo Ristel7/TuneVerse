@@ -1,149 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <title>TuneVerse</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="Images/ChatGPT Image Nov 21, 2025, 05_46_46 PM.png" />
+  <meta charset="UTF-8" />
+  <title>TuneVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="Images/ChatGPT Image Nov 21, 2025, 05_46_46 PM.png" />
 
-    <!-- Optional: favicon -->
-    <!-- <link rel="icon" type="image/png" href="images/tuneverse-icon.png" /> -->
+  <!-- Optional: favicon -->
+  <!-- <link rel="icon" type="image/png" href="images/tuneverse-icon.png" /> -->
 </head>
-
 <body>
-    <div class="app-shell">
-        <div class="app-container">
-            <!-- SIDEBAR -->
-            <aside class="sidebar">
-                <div class="logo">
-                    <div class="logo-icon">♪</div>
-                    <span>TuneVerse</span>
-                </div>
-
-                <nav class="main-nav">
-                    <button class="nav-btn active" data-view="home">⌂ Home</button>
-                    <button class="nav-btn" data-view="bollywood">♡ Bollywood</button>
-                    <button class="nav-btn" data-view="search">⌕ Search</button>
-                    <button class="nav-btn" data-view="library">☰ Library</button>
-                </nav>
-
-                <div class="sidebar-playlists">
-                    <div class="sidebar-section">
-                        <div class="sidebar-title">Top 10 Playlist</div>
-                        <div class="library-list" id="playlistEnglish"></div>
-                    </div>
-
-                    <div class="sidebar-section">
-                        <div class="sidebar-title">Bollywood Love Songs</div>
-                        <div class="library-list" id="playlistBollywood"></div>
-                    </div>
-                </div>
-            </aside>
-
-            <!-- MAIN -->
-            <main class="main">
-                <header class="top-bar glass">
-                    <div class="nav-arrows">
-                        <button class="circle-btn">←</button>
-                        <button class="circle-btn">→</button>
-                    </div>
-
-                    <div class="top-right">
-                        <div class="search-box">
-                            <span class="search-icon">⌕</span>
-                            <input type="text" id="searchInput" placeholder="Search in all 30 songs..." />
-                        </div>
-                        <div class="profile">
-                            <button class="upgrade">FREE • LOCAL PLAYER</button>
-                            <button class="avatar">
-                                <div class="avatar-icon">P</div>
-                                <span class="avatar-name">Priyanshu Project</span>
-                            </button>
-                        </div>
-                    </div>
-                </header>
-
-                <section class="content">
-                    <!-- HOME (TOP 10 GLOBAL) -->
-                    <section id="homeSection">
-                        <h1>Top 10 Songs of All Time</h1>
-                        <p class="section-subtitle">
-                            All songs are stored locally on your machine. Click a card to play.
-                        </p>
-                        <div class="card-grid" id="topSongsGrid"></div>
-                    </section>
-
-                    <!-- BOLLYWOOD PAGE -->
-                    <section id="bollywoodSection" class="hidden">
-                        <h1>Bollywood Songs</h1>
-                        <p class="section-subtitle">
-                            A collection of 20 romantic Hindi tracks.
-                        </p>
-                        <div class="card-grid" id="bollywoodGrid"></div>
-                    </section>
-
-                    <!-- SEARCH -->
-                    <section id="searchSection" class="hidden">
-                        <h1>Search</h1>
-                        <p class="section-subtitle">
-                            Search across both playlists by song, artist, or album.
-                        </p>
-                        <div class="search-results" id="searchResults"></div>
-                    </section>
-
-                    <!-- LIBRARY -->
-                    <section id="librarySection" class="hidden">
-                        <h1>Your Library</h1>
-                        <p class="section-subtitle">
-                            All tracks in TuneVerse, English and Bollywood.
-                        </p>
-                        <div class="card-grid" id="libraryGrid"></div>
-                    </section>
-                </section>
-            </main>
+  <div class="app-shell">
+    <div class="app-container">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="logo-icon">♪</div>
+          <span>TuneVerse</span>
         </div>
 
-        <!-- NOW PLAYING BAR -->
-        <footer class="now-playing glass">
-            <div class="np-left">
-                <div class="np-img" id="npCover"></div>
-                <div class="np-meta">
-                    <div class="np-title" id="npTitle">Select a song</div>
-                    <div class="np-artist" id="npArtist">—</div>
-                </div>
-            </div>
+        <nav class="main-nav">
+          <button class="nav-btn active" data-view="home">⌂ Home</button>
+          <button class="nav-btn" data-view="bollywood">♡ Bollywood</button>
+          <button class="nav-btn" data-view="search">⌕ Search</button>
+          <button class="nav-btn" data-view="library">☰ Library</button>
+        </nav>
 
-            <div class="np-center">
-                <div class="controls">
-                    <button class="ctrl-btn" id="repeatBtn" title="Repeat">⟳</button>
-                    <button class="ctrl-btn" id="prevBtn" title="Previous">«</button>
-                    <button class="ctrl-btn play-btn" id="playPauseBtn" title="Play/Pause">▶</button>
-                    <button class="ctrl-btn" id="nextBtn" title="Next">»</button>
-                    <button class="ctrl-btn" id="shuffleBtn" title="Shuffle">🔀</button>
-                </div>
-                <div class="progress-bar">
-                    <span id="currentTime">0:00</span>
-                    <input type="range" min="0" max="100" value="0" id="progressRange" />
-                    <span id="totalTime">0:00</span>
-                </div>
-            </div>
+        <div class="sidebar-playlists">
+          <div class="sidebar-section">
+            <div class="sidebar-title">Top 10 Playlist</div>
+            <div class="library-list" id="playlistEnglish"></div>
+          </div>
 
-            <div class="np-right">
-                <button class="ctrl-btn small" title="Queue">⧉</button>
-                <button class="ctrl-btn small" title="Device">📻</button>
-                <div class="volume-wrap">
-                    <span class="volume-icon">🔊</span>
-                    <input type="range" min="0" max="100" value="75" id="volumeRange" />
-                </div>
-            </div>
+          <div class="sidebar-section">
+            <div class="sidebar-title">Bollywood Love Songs</div>
+            <div class="library-list" id="playlistBollywood"></div>
+          </div>
+        </div>
+      </aside>
 
-            <audio id="audioPlayer"></audio>
-        </footer>
+      <!-- MAIN -->
+      <main class="main">
+        <header class="top-bar glass">
+          <div class="nav-arrows">
+            <button class="circle-btn">←</button>
+            <button class="circle-btn">→</button>
+          </div>
+
+          <div class="top-right">
+            <div class="search-box">
+              <span class="search-icon">⌕</span>
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search in all 30 songs..."
+              />
+            </div>
+            <div class="profile">
+              <button class="upgrade">FREE • LOCAL PLAYER</button>
+              <button class="avatar">
+                <div class="avatar-icon">P</div>
+                <span class="avatar-name">Priyanshu Project</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <section class="content">
+          <!-- HOME (TOP 10 GLOBAL) -->
+          <section id="homeSection">
+            <h1>Top 10 Songs of All Time</h1>
+            <p class="section-subtitle">
+              All songs are stored locally on your machine. Click a card to play.
+            </p>
+            <div class="card-grid" id="topSongsGrid"></div>
+          </section>
+
+          <!-- BOLLYWOOD PAGE -->
+          <section id="bollywoodSection" class="hidden">
+            <h1>Bollywood  Songs</h1>
+            <p class="section-subtitle">
+              A collection of 20 romantic Hindi tracks.
+            </p>
+            <div class="card-grid" id="bollywoodGrid"></div>
+          </section>
+
+          <!-- SEARCH -->
+          <section id="searchSection" class="hidden">
+            <h1>Search</h1>
+            <p class="section-subtitle">
+              Search across both playlists by song, artist, or album.
+            </p>
+            <div class="search-results" id="searchResults"></div>
+          </section>
+
+          <!-- LIBRARY -->
+          <section id="librarySection" class="hidden">
+            <h1>Your Library</h1>
+            <p class="section-subtitle">
+              All tracks in TuneVerse, English and Bollywood.
+            </p>
+            <div class="card-grid" id="libraryGrid"></div>
+          </section>
+        </section>
+      </main>
     </div>
 
-    <script src="scripts.js"></script>
-</body>
+    <!-- NOW PLAYING BAR -->
+    <footer class="now-playing glass">
+      <div class="np-left">
+        <div class="np-img" id="npCover"></div>
+        <div class="np-meta">
+          <div class="np-title" id="npTitle">Select a song</div>
+          <div class="np-artist" id="npArtist">—</div>
+        </div>
+      </div>
 
+      <div class="np-center">
+        <div class="controls">
+          <button class="ctrl-btn" id="repeatBtn" title="Repeat">⟳</button>
+          <button class="ctrl-btn" id="prevBtn" title="Previous">«</button>
+          <button class="ctrl-btn play-btn" id="playPauseBtn" title="Play/Pause">▶</button>
+          <button class="ctrl-btn" id="nextBtn" title="Next">»</button>
+          <button class="ctrl-btn" id="shuffleBtn" title="Shuffle">🔀</button>
+        </div>
+        <div class="progress-bar">
+          <span id="currentTime">0:00</span>
+          <input type="range" min="0" max="100" value="0" id="progressRange" />
+          <span id="totalTime">0:00</span>
+        </div>
+      </div>
+
+      <div class="np-right">
+        <button class="ctrl-btn small" title="Queue">⧉</button>
+        <button class="ctrl-btn small" title="Device">📻</button>
+        <div class="volume-wrap">
+          <span class="volume-icon">🔊</span>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="75"
+            id="volumeRange"
+          />
+        </div>
+      </div>
+
+      <audio id="audioPlayer"></audio>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
