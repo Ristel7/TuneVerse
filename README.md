@@ -35,7 +35,7 @@
 TuneVerse is deployed using Vercel.
 
 Live Application
-https://tune-verse-mocha.vercel.app/
+https://tune-verse-vert.vercel.app/
 GitHub Repository
 https://github.com/Ristel7/TuneVerse
 # 🎵 About
