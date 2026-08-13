@@ -29,7 +29,15 @@
 </p>
 
 ---
+# 
+🌐 Deployment
 
+TuneVerse is deployed using Vercel.
+
+Live Application
+https://tune-verse-mocha.vercel.app/
+GitHub Repository
+https://github.com/Ristel7/TuneVerse
 # 🎵 About
 
 **TuneVerse** is a browser-based music player built using **HTML5, CSS3, Vanilla JavaScript, and JSON**.
